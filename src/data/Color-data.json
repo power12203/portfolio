@@ -1,0 +1,60 @@
+{
+  "colors": [
+    {
+      "id": 1,
+      "title": "오사카",
+      "color": "../img/img1.jpg",
+      "rating": "가이유칸 수족관",
+      "explanation": "추천: 가족, 사진, 물고기"
+    },
+    {
+      "id": 2,
+      "title": "오사카항",
+      "color": "#26ac56",
+      "rating": "덴포잔 대관람차",
+      "explanation": "추천: 가족,커플,사진,전망"
+    },
+    {
+      "id": 3,
+      "title": "오사카항",
+      "color": "#ff0000",
+      "rating": "난슈지",
+      "explanation": "추천: 가족,커플,사진,전망"
+    },
+    {
+      "id": 4,
+      "title": "오사카",
+      "color": "../img/img1.jpg",
+      "rating": "도톤보리",
+      "explanation": "추천: 커플,가족,사진,산책"
+    },
+    {
+      "id": 5,
+      "title": "오사카",
+      "color": "#26ac56",
+      "rating": "대스모3월대회",
+      "explanation": "3월중 15일간 매일대회개최"
+    },
+    {
+      "id": 6,
+      "title": "시텐노지",
+      "color": "#ff0000",
+      "rating": "오사카",
+      "explanation": "오래되다"
+    },
+    {
+      "id": 7,
+      "title": "오사카",
+      "color": "#26ac56",
+      "rating": "시텐노지",
+      "explanation": "추천: 가족, 사진, 역사"
+    },
+    {
+      "id": 8,
+      "title": "오사카성",
+      "color": "#ff0000",
+      "rating": "역사",
+      "explanation": "추천: 커플,가족,사진,산책"
+    }
+  ]
+}
