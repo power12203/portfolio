@@ -19,7 +19,7 @@ const Div1 = styled.div`
   box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
   transition: all 0.5s ease-in-out;
   flex-shrink: 0;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   height: 350px;
   border-radius: 10px;
 `;

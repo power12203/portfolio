@@ -21,7 +21,7 @@ export default function StarRating({ totalStars = 5, handleRat = (f) => f }) {
           onclick={() => onclick(idx)}
         />
       ))}
-      <p>{selectedStars / totalStars}</p>
+      {/* <p>{selectedStars / totalStars}</p> */}
     </>
   );
 }

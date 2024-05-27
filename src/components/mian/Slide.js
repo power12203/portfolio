@@ -7,7 +7,38 @@ const Slidebox = styled.div`
   width: 100%;
   height: 100%;
   margin: 10px auto;
-  margin-top: 100px;
+  margin-top: 25px;
+  .slick-dots{
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+  .slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 10px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .50;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: black;
+}
 `;
 
 const images = require.context("../../img", false, /\.(png|jpe?g|svg)$/);
@@ -27,14 +58,14 @@ const settings = {
 };
 const Img = styled.img`
   width: 100%;
-  height: 450px;
+  height: 800px;
   /* border: 1px solid #000; */
   display: block;
   margin-left: 0;
 `;
 const Slide = () => {
   return (
-    <Slidebox>
+    <Slidebox className="main side">
       <Slider {...settings}>
         {imgList.map((img) => (
           <div>

@@ -11,9 +11,14 @@ import { reset_posts } from "../modules/postList";
 const HeaderDiv = styled.div`
   position: fixed;
   width: 100%;
-  background-image: url('/public/imga/fff.gif');
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:rgba(0, 0, 0, 0.8);
   box-sizing: border-box;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08); 
+  z-index: 100;
 `;
 const Wrapper = styled(Responsive)`
   width: 85%;
@@ -47,7 +52,7 @@ const MenuUL = styled.ul`
 
 const MenuULLiLink = styled(Link)`
   font-style: 40px;
-  color: black;
+  color: white;
   &:hover {
     color: red;
   }
@@ -68,7 +73,7 @@ const Header = (props) => {
     <>
       <HeaderDiv>
         <Wrapper>
-          <Link to="/" className="logo">
+          <Link to="/" className="logo" style={{color: "white"}}>
           Jeong Gil
           </Link>
           <div className="meun">
@@ -80,30 +85,20 @@ const Header = (props) => {
               <MenuULLiLink>먹거리소개</MenuULLiLink>
             </li>
             <li>
-              <MenuULLiLink>
-                <Link
-                  style={{ color: "black", textDecoration: "none" }}
-                  to="/tnrth"
-                >
+              <MenuULLiLink to="/tnrth">
                   숙소
-                </Link>
               </MenuULLiLink>
             </li>
             <li>
-              <MenuULLiLink>
-              <Link
-                  style={{ color: "black", textDecoration: "none" }}
-                  to="/post"
-                >
+              <MenuULLiLink to="/post">
                   후기 게시판
-                </Link>
                 </MenuULLiLink>
             </li>
           </MenuUL>
         </div>
           {user ? (
             <div className="right">
-              <div style={{ marginRight: "5px" }}>{user.username}</div>
+              <div style={{ marginRight: "5px" ,color: "white"}}>{user.username}</div>
               <Button onClick={onClick}>로그아웃</Button>
             </div>
           ) : (

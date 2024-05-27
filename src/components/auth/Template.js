@@ -2,14 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import palette from "../../common/palette";
-
 const TemplateDiv = styled.div`
+  width: 100%;
+  height: 100%;
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
   right: 0;
-  background: ${palette.Gray[2]};
+  background-image: url(../../../imge/1697433279886.jpg);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,6 +20,7 @@ const TemplateDiv = styled.div`
 `;
 
 const FomBoxDiv = styled.div`
+  background-color:  #ebecf0;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.025);
   padding: 2rem;
   width: 300px;

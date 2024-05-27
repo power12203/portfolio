@@ -1,0 +1,40 @@
+[
+    {
+      "title": "이미지 1",
+      "content": "도톤보리",
+      "imageUrl": "../imag/1697367804330.jpg",
+      "description": "이미지 1에 대한 설명"
+    },
+    {
+      "title": "이미지 2",
+      "content": "유니버셜 스튜디오",
+      "imageUrl": "https://example.com/image2.jpg",
+      "description": "이미지 2에 대한 설명"
+    },
+    {
+      "title": "이미지 3",
+      "content": "오사카 성",
+      "imageUrl": "https://example.com/image3.jpg",
+      "description": "이미지 3에 대한 설명"
+    },
+    {
+        "title": "이미지 3",
+        "content": "해유관",
+        "imageUrl": "https://example.com/image3.jpg",
+        "description": "이미지 3에 대한 설명"
+      },
+   
+      {
+        "title": "이미지 3",
+        "content": "교토",
+        "imageUrl": "https://example.com/image3.jpg",
+        "description": "이미지 3에 대한 설명"
+      },
+   
+      {
+        "title": "이미지 3",
+        "content": "아리마 온센",
+        "imageUrl": "https://example.com/image3.jpg",
+        "description": "이미지 3에 대한 설명"
+      }
+  ]
