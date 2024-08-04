@@ -10,17 +10,16 @@ const TemplateDiv = styled.div`
   top: 0;
   bottom: 0;
   right: 0;
-  background-image: url(../../../imge/1697433279886.jpg);
+  background-image: url(../../../imge/20231018_123506.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 `;
 
 const FomBoxDiv = styled.div`
-  background-color:  #ebecf0;
+  background-color: #ebecf0;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.025);
   padding: 2rem;
   width: 300px;

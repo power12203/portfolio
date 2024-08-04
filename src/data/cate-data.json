@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Osaka",
+    "location": {
+      "city": "Barcelona",
+      "country": "Spain"
+    },
+    "price_per_night": 120,
+    "review_count": 250,
+    "rating": 4.5,
+    "type": "Apartment",
+    "amenities": ["Wi-Fi", "Parking", "Breakfast", "Pool"],
+    "image_url": "/path/to/image1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Mountain View Hotel",
+    "location": {
+      "city": "Denver",
+      "country": "USA"
+    },
+    "price_per_night": 180,
+    "review_count": 320,
+    "rating": 4.7,
+    "type": "Hotel",
+    "amenities": ["Wi-Fi", "Parking", "Gym", "Restaurant"],
+    "image_url": "/path/to/image2.jpg"
+  }
+]

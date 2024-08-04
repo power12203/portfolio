@@ -7,8 +7,8 @@ const Slidebox = styled.div`
   width: 100%;
   height: 100%;
   margin: 10px auto;
-  margin-top: 25px;
-  .slick-dots{
+  margin-top: 5px;
+  .slick-dots {
     color: white;
     position: absolute;
     bottom: 30px;
@@ -20,7 +20,7 @@ const Slidebox = styled.div`
     text-align: center;
   }
   .slick-dots li button:before {
-    font-family: 'slick';
+    font-family: "slick";
     font-size: 10px;
     line-height: 20px;
     position: absolute;
@@ -28,17 +28,17 @@ const Slidebox = styled.div`
     left: 0;
     width: 20px;
     height: 20px;
-    content: '•';
+    content: "•";
     text-align: center;
-    opacity: .50;
+    opacity: 0.5;
     color: white;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-.slick-dots li.slick-active button:before {
-    opacity: .75;
+  }
+  .slick-dots li.slick-active button:before {
+    opacity: 0.75;
     color: black;
-}
+  }
 `;
 
 const images = require.context("../../img", false, /\.(png|jpe?g|svg)$/);

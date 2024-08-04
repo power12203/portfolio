@@ -15,10 +15,7 @@ const Iodging = () => {
   const itemPerPage = useRef(8);
   return (
     <>
-      <header>
-        <Header />
-      </header>
-      <hr />
+      <Header />
       <div style={{ padding: "0", margin: "0 auto" }}>
         <H1>숙소 리스트</H1>
         <IodgingList
@@ -30,4 +27,4 @@ const Iodging = () => {
   );
 };
 
-export default Iodging;
+export default Iodging; // 수정 필수

@@ -1,9 +1,18 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import imageObject from "../../data/Color-data.json";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Card from "./Card";
 import Head from "./Head";
 import { Link } from "react-router-dom";
+const Slidebox = styled.div`
+  width: 100%;
+  height: 100%;
+  margin: 10px auto;
+  margin-top: 5px;
+`;
 
 const createArray = (length) => [...Array(length)];
 
@@ -33,6 +42,11 @@ const Div = styled.div`
   margin: 0 auto;
   transition: all 1s;
   transform: translateX(${(props) => props.moveX}px);
+`;
+const Title = styled.div`
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: black;
 `;
 
 function CardList({ count = 8 }) {
@@ -67,23 +81,65 @@ function CardList({ count = 8 }) {
       return;
     }
   };
-
+  const settings = {
+    centerMode: true,
+    centerPadding: "60px",
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: "40px",
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: "40px",
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
   return (
     <div style={{ marginTop: "100px" }}>
-      <Head
+      {/* <Head
         left={left}
         right={right}
         leftMoveX={leftMoveX}
         rightMoveX={rightMoveX}
         handleSetMoveX={handleSetMoveX}
-      />
-      <Div moveX={moveX}>
-        {imgList.map((img, idx) => (
-          <Card img={img} />
-        ))}
-      </Div>
+      /> */}
+      <Title>일본 오사카</Title>
+      <Slidebox className="main side">
+        <Slider {...settings}>
+          {imgList.map((img, idx) => (
+            <Card img={img} />
+          ))}
+        </Slider>
+      </Slidebox>
     </div>
   );
 }
 
 export default CardList;
+
+//  <div style={{ marginTop: "100px" }}>
+//    <Head
+//      left={left}
+//      right={right}
+//      leftMoveX={leftMoveX}
+//      rightMoveX={rightMoveX}
+//      handleSetMoveX={handleSetMoveX}
+//    />
+//    <Div moveX={moveX}>
+//      {imgList.map((img, idx) => (
+//        <Card img={img} />
+//      ))}
+//    </Div>
+//  </div>;

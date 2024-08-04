@@ -10,7 +10,7 @@ const Slidebox = styled.div`
   margin-top: 25px;
   display: flex;
   flex-direction: column;
-  .slick-dots{
+  .slick-dots {
     color: white;
     position: absolute;
     bottom: 30px;
@@ -36,12 +36,6 @@ const Slidebox = styled.div`
     cursor: pointer;
     text-align: center;
   }
-#slick {} //100
-.slick {} //10
-body {} //1
-
-body::after {}
-body::before {}
 
   .slick-dots li button:before {
     font-family: "slick";
@@ -59,29 +53,32 @@ body::before {}
     margin: auto;
     font-weight: 700;
     text-shadow: 0 0 10px #fff;
+    &:hover {
+      color: black;
+    }
   }
-.slick-dots li.slick-active button:before {
-    opacity: .75;
+  .slick-dots li.slick-active button:before {
+    opacity: 0.75;
     color: black;
-}
-.slick-dots li:nth-child(1) button:before{
+  }
+  .slick-dots li:nth-child(1) button:before {
     content: "도톤보리";
-}
-.slick-dots li:nth-child(2) button:before{
+  }
+  .slick-dots li:nth-child(2) button:before {
     content: "유니버셜 스튜디오";
-}
-.slick-dots li:nth-child(3) button:before{
+  }
+  .slick-dots li:nth-child(3) button:before {
     content: "오사카성";
-}
-.slick-dots li:nth-child(4) button:before{
+  }
+  .slick-dots li:nth-child(4) button:before {
     content: "해유관";
-}
-.slick-dots li:nth-child(5) button:before{
+  }
+  .slick-dots li:nth-child(5) button:before {
     content: "교토";
-}
-.slick-dots li:nth-child(6) button:before{
+  }
+  .slick-dots li:nth-child(6) button:before {
     content: "아니마 온센";
-}
+  }
 `;
 
 const images = require.context("../../imag", false, /\.(png|jpe?g|svg)$/);
@@ -93,16 +90,17 @@ const imgList = keys.map((key) => images(key));
 const settings = {
   dots: true,
   infinite: true,
-  speed: 500,
+  speed: 1000,
+  fade: true,
+  cssEase: "linear",
   slidesToShow: 1,
-  appendDots:dots => (
+  appendDots: (dots) => (
     <div
       style={{
         backgroundColor: "tranaparent",
         borderRadius: "10px",
-        padding: "10px"
+        padding: "10px",
       }}
-      
     >
       <ul style={{ margin: "0px" }}> {dots} </ul>
     </div>
@@ -118,9 +116,7 @@ const Img = styled.img`
   display: block;
   margin-left: 0;
 `;
-const SlickDot = styled.div`
-
-`
+const SlickDot = styled.div``;
 const RegionList = () => {
   return (
     <Slidebox className="main side">
@@ -130,13 +126,9 @@ const RegionList = () => {
             <Img src={img} alt="" />
           </div>
         ))}
-        
       </Slider>
-      <SlickDot className="slickDbox">
-
-      </SlickDot>
+      <SlickDot className="slickDbox"></SlickDot>
     </Slidebox>
-
   );
 };
 

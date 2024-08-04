@@ -19,20 +19,20 @@ const FormDiv = styled.div`
     border-radius: 10px;
   }
 `;
-const Forms =styled.form`
-  width: 100%;
+const Forms = styled.form`
+  width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`
+`;
 const InputStyle = styled.input`
   font-size: 1rem;
   border: none;
   border-bottom: 1px solid ${palette.Gray[5]};
   padding-bottom: 0%.5rem;
   outline: none;
-  width: 100%;
+  width: 400px;
   background: #eee;
   padding: 16px;
   margin: 8px 0;
