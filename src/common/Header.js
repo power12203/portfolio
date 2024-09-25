@@ -157,7 +157,7 @@ const Header = (props) => {
                 <MenuULLiLink to="/">추천장소</MenuULLiLink>
               </li>
               <li>
-                <MenuULLiLink to="/">먹거리소개</MenuULLiLink>
+                <MenuULLiLink to="/test">먹거리소개</MenuULLiLink>
               </li>
               <li>
                 <MenuULLiLink to="/tnrth">숙소</MenuULLiLink>
